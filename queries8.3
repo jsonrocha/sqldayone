@@ -1,0 +1,7 @@
+SELECT * FROM Employees
+SELECT fullname, phoneextension FROM Employees WHERE isparttime = false;
+INSERT INTO Employees (Id, FullName, Salary, Position, PhoneExtension, IsPartTime) VALUES ('7655', 'Dave Buster', 450, 'Developer', 365, true);
+UPDATE Employees SET salary = 500 WHERE position = 'Cook';
+DELETE FROM Employees WHERE fullname = 'Lazy Lynn';
+UPDATE Employees SET isparttime= 'false';
+ALTER TABLE Employees ADD COLUMN ParkingSpotNumber VARCHAR(10);
